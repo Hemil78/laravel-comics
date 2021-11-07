@@ -82,3 +82,111 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.movies {
+  width: 100%;
+  background-color: #1c1c1c;
+  position: relative;
+}
+.movies h2 {
+  position: absolute;
+  top: -22px;
+  left: 170px;
+  color: #fff;
+  background-color: #0282f9;
+  padding: 8px 15px;
+}
+.movies .box-movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.movies .box-movies .movie {
+  position: relative;
+  width: calc(25% - 40px);
+  margin: 20px;
+  cursor: pointer;
+}
+.movies .box-movies .movie img {
+  width: 100%;
+}
+.movies .box-movies .description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.movies .box-movies .description:hover {
+  opacity: 1;
+}
+.movies .box-movies .description::-webkit-scrollbar {
+  display: none;
+}
+.movies .box-movies .description h3 {
+  margin-bottom: 10px;
+}
+.movies .box-movies .description p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.movies .box-movies .description span {
+  font-size: 13px;
+}
+.movies .load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.movies .load button {
+  border: none;
+  color: #fff;
+  background-color: #0282f9;
+  padding: 8px 40px;
+  margin: 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icons-address {
+  width: 100%;
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+.icons-address ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icons-address ul li {
+  list-style: none;
+}
+.icons-address ul li a {
+  text-decoration: none;
+}
+.icons-address ul li a .image {
+  display: inline-block;
+  width: 50px;
+  margin-right: 15px;
+}
+.icons-address ul li a .image img {
+  vertical-align: middle;
+  width: 100%;
+}
+.icons-address ul li a span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.icons-address ul li a .point {
+  width: 35px;
+}
